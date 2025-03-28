@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Machine Stops by E. M. Forster (1909)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(45deg, #2b1b61, #4c2a84);
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Create the starry effect */
+        body::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 7px),
+                radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 6px),
+                radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 5px);
+            background-size: 550px 550px, 350px 350px, 250px 250px;
+            background-position: 0 0, 40px 60px, 130px 270px;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 42px;
+            color: #c4ff2e;
+            margin-bottom: 30px;
+            text-shadow: 0 0 5px rgba(196, 255, 46, 0.5);
+            font-weight: bold;
+            padding-left: 30px;
+        }
+
+        .article-container {
+            display: flex;
+            background-color: #000;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .article-text {
+            flex: 1;
+            padding: 30px;
+            line-height: 1.6;
+            font-size: 18px;
+        }
+
+        .first-paragraph {
+            margin-bottom: 30px;
+        }
+
+        .author-info {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            color: #fff;
+            font-style: italic;
+        }
+
+        .forster-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            right: 50px;
+            top: calc(50% - 20px);
+            transform: translateY(-50%);
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Digital backdrop styling */
+        .digital-backdrop {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-image: url('https://placehold.co/600x400/3f1f6f/3f1f6f');
+            background-size: cover;
+            opacity: 0.6;
+            mix-blend-mode: overlay;
+            pointer-events: none;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Machine Stops by E. M. Forster (1909)</h1>
+        
+        <div class="article-container">
+            <div class="article-text">
+                <p class="first-paragraph">
+                    Within the massive apparatus in E. M. Forster's take on 
+                    the smart home, each individual lives in an 
+                    underground room that meets all their physical needs 
+                    and communicates with other humans via a 
+                    technology akin to video calls. Most characters are 
+                    perfectly happy to live out their days in isolation, 
+                    although some insist on travelling through the hostile 
+                    environment outside in order to meet face to face. 
+                    Eventually, the first perspective wins out. But when 
+                    the machine finally breaks down, its cocooned 
+                    inhabitants face the end of the world.
+                </p>
+                <p>
+                    More than a hundred years after this story was first 
+                    published, it feels incredibly prescient. In 2020, I sat 
+                    in my apartment in front of a glowing computer 
+                    screen, my friends and coworkers reduced to 
+                    rectangles in a videoconference app, and I felt the 
+                    walls of the machine surround me. I felt them again 
+                    last year, when the air was so tainted with wildfire 
+                    smoke that the horizon turned orange and any New 
+                    Yorker who was able retreated indoors once again. As 
+                    Forster predicted, the machine can be comforting in 
+                    the face of an unsafe world – and at the same time, it's 
+                    so stifling that it makes us long for even "scraps" of 
+                    the open sky. Sophie Bushwick
+                </p>
+            </div>
+            
+            <div class="digital-backdrop"></div>
+           
+        </div>
+    </div>
+    <footer>
+        <button><a href="5.html">Next</a></button>
+    </footer>
+</body>
+</html>

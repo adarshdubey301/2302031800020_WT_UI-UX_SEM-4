@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sci-Fi Fiction Stories</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #0a192f;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            background-image: url('https://placehold.co/1500x800/0a192f/0a192f');
+        }
+
+        .header {
+            position: relative;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+        }
+
+        .header-image {
+            width: 90%;
+            height: 100px;
+            margin: 0 auto;
+            background-image: url('https://placehold.co/1200x100/182235/182235');
+            background-size: cover;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .home-text {
+            font-size: 46px;
+            font-weight: bold;
+            color: #ff3333;
+            text-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: calc(100vh - 100px);
+            background-image: url('https://placehold.co/1200x800/0a192f/0a192f');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url('https://placehold.co/1200x800/0a192f/0a192f');
+            background-size: cover;
+            opacity: 0.8;
+        }
+
+        .logo-circle {
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .logo-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .arrow {
+            position: absolute;
+            left: 240px;
+            top: 100px;
+            color: #33ff33;
+            font-size: 24px;
+        }
+
+        .main-title {
+            font-size: 52px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+        .subtitle {
+            font-size: 36px;
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .star {
+            color: #ffff33;
+            font-size: 36px;
+            margin-right: 10px;
+        }
+
+        .click-here {
+            font-size: 56px;
+            color: #ffcc00;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .click-here:hover {
+            color: #ffdd33;
+            text-shadow: 0 0 15px rgba(255, 204, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-image">
+                <div class="home-text">Home</div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="background-image"></div>
+            
+            <div class="logo-circle">
+            </div>
+            
+            <div class="arrow">→</div>
+            
+            <h1 class="main-title">Explore the story of fiction</h1>
+            
+            <div class="subtitle">
+                <span class="star">★</span>
+                For Read a story<br>
+                please click here.
+            </div>
+            
+            <a href="#" class="click-here"><a href="4.html">click here</a></a>
+        </div>
+    </div>
+</body>
+</html>

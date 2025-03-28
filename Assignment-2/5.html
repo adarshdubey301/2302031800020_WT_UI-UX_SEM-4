@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lottery by Shirley Jackson (1948)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #0a0e14;
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Create the starry space effect */
+        body::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 7px),
+                radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 6px);
+            background-size: 550px 550px, 350px 350px;
+            background-position: 0 0, 40px 60px;
+            z-index: 0;
+            pointer-events: none;
+            opacity: 0.3;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #ffffff;
+            margin-bottom: 30px;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+            font-weight: bold;
+            padding-left: 20px;
+        }
+
+        .article-container {
+            display: flex;
+            background-color: #000;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .article-text {
+            flex: 1;
+            padding: 30px;
+            line-height: 1.6;
+            font-size: 22px;
+            color: #ff3333;
+            background: linear-gradient(to bottom, black 0%, #001530 100%);
+        }
+
+        .author {
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        .author-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            right: 50px;
+            top: calc(50% + 100px);
+            transform: translateY(-50%);
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            object-fit: cover;
+        }
+
+        /* Light effect */
+        .light-effect {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%);
+            pointer-events: none;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Lottery by:-Shirley Jackson(1948)</h1>
+        
+        <div class="article-container">
+            <div class="article-text">
+                <p>
+                    Shirley Jackson is author of one of the scariest novels 
+                    in the world (The Haunting of Hill House) and one of 
+                    the most brilliantly unsettling (We Have Always Lived 
+                    in the Castle). So it is only to be expected that she 
+                    would also be the author of one of the most quietly 
+                    disturbing speculative short stories ever written, The 
+                    Lottery. It takes place in a nondescript rural village, 
+                    where the locals are gathering for the lottery. It 
+                    sounds like it's going to be fun. Kids are collecting 
+                    stones. Everyone knows what is going to happen; they 
+                    don't think much of neighbouring villages who have 
+                    got rid of their lotteries ("Listening to the young folks, 
+                    nothing's good enough for them. Next thing you know, 
+                    they'll be wanting to go back to living in caves"). But a 
+                    trickle of unease begins to spread, as the lottery 
+                    "draw" looms nearer. If you don't know what the twist 
+                    is, I won't spoil it, but I just read this again and I still 
+                    feel a little shaky. Jackson is a stone-cold genius.
+                    <span class="author">Alison Flood</span>
+                </p>
+            </div>
+            
+            
+            
+            <div class="light-effect"></div>
+        </div>
+    </div>
+    <button><a href="6.html">Next</a></button>
+    <footer>
+        
+    </footer>
+</body>
+</html>

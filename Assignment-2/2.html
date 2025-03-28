@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #111;
+            background-image: url('https://placehold.co/1200x800/001428/001428');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-card-container {
+            position: relative;
+            width: 400px;
+            background-color: #fde2ea;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        .login-card {
+            width: 100%;
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-header {
+            background-color: #323b66;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            font-size: 12px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .avatar-container {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background-color: rgba(197, 199, 235, 0.4);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            background-color: #fff;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .greeting-bubble {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: #627bff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+
+        .welcome-text {
+            margin-top: 15px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .welcome-description {
+            margin-top: 10px;
+            font-size: 12px;
+            opacity: 0.7;
+            max-width: 260px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.4;
+        }
+
+        .login-form {
+            padding: 30px 20px;
+        }
+
+        .login-title {
+            text-align: center;
+            color: #627bff;
+            background-color: #e9ecff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px 10px 10px 35px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .form-group i {
+            position: absolute;
+            left: 10px;
+            top: 12px;
+            color: #aaa;
+        }
+
+        .form-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+        }
+
+        .remember-me input {
+            margin-right: 5px;
+        }
+
+        .forgot-password {
+            color: #627bff;
+            text-decoration: none;
+        }
+
+        .login-button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #627bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+
+        .create-account {
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+        }
+
+        .credits {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-card-container">
+            <div class="login-card">
+                <div class="login-header">
+                    <div class="logo">LOGO</div>
+                    <div class="avatar-container">
+                        <div class="avatar">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30 30C37.5 30 43.5 24 43.5 16.5C43.5 9 37.5 3 30 3C22.5 3 16.5 9 16.5 16.5C16.5 24 22.5 30 30 30Z" fill="#323b66"/>
+                                <path d="M30 33C20.5 33 3 37.75 3 47.25V54H57V47.25C57 37.75 39.5 33 30 33Z" fill="#323b66"/>
+                                <path d="M30 30C37.5 30 43.5 24 43.5 16.5C43.5 9 37.5 3 30 3C22.5 3 16.5 9 16.5 16.5C16.5 24 22.5 30 30 30Z" fill="#323b66"/>
+                                <path d="M30 33C20.5 33 3 37.75 3 47.25V54H57V47.25C57 37.75 39.5 33 30 33Z" fill="#323b66"/>
+                            </svg>
+                        </div>
+                        <div class="greeting-bubble">hi!</div>
+                    </div>
+                    <div class="welcome-text">welcome</div>
+                    <div class="welcome-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                </div>
+                <div class="login-form">
+                    <div class="login-title">USER LOGIN</div>
+                    <div class="form-group">
+                        <i>👤</i>
+                        <input type="text" placeholder="Enter your username">
+                    </div>
+                    <div class="form-group">
+                        <i>🔒</i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div class="form-options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Remember</label>
+                        </div>
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+                    <button class="login-button"><a href="3.html">LOGIN</a></button>
+                    <div class="create-account">Create Account</div>
+                </div>
+            </div>
+            <div class="credits">designed by freepik</div>
+        </div>
+    </div>
+</body>
+</html>
